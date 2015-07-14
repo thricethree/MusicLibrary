@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/artistFoundDisplayRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:padding="2dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:layout_weight="1" >
+
+
+
+        <TextView
+            android:id="@+id/foundAlbumTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/albumTitleLabel"
+            android:textSize="@dimen/sub_header"
+            android:singleLine="false"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/foundArtistTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="@string/artistNameLabel"
+            android:layout_below="@+id/foundAlbumTextView"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/foundCoverArtImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/albumTitleLabel"
+        android:src="@android:drawable/ic_menu_report_image" />
+
+    <Button
+        android:id="@+id/addAlbumButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="1"
+        android:padding="@dimen/default_padding"
+        android:text="@string/addEntryButtonLabel" />
+
+</TableRow>

@@ -1,8 +1,43 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo">
+
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="BodyStyle">
+        <item name="android:textSize">@dimen/body</item>
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+    <style name="HeaderStyle">
+        <item name="android:textSize">@dimen/header</item>
+        <item name="android:textColor">@color/dark_blue</item>
+
+    </style>
+    <style name="SubHeaderStyle">
+        <item name="android:textSize">@dimen/sub_header</item>
+        <item name="android:textColor">@color/dark_blue</item>
+
+    </style>
+    <style name="PopUp">
+        <item name="android:background">@color/background</item>
+        <item name="android:textSize">@dimen/sub_header</item>
+        <item name="android:textColor">@color/dark_blue</item>
+
+    </style>
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:popupMenuStyle">@style/PopUp</item>
     </style>
 
 </resources>
