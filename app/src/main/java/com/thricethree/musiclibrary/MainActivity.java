@@ -77,15 +77,15 @@ public class MainActivity extends Activity {
     private String artistSearchName = "";
 
     private String lastFmUrlPrefix = "http://ws.audioscrobbler.com/2.0/?";
-    private static final String apiKey = "api_key=dc5fa846a22b158c42612c953c1e2576";
+    private static final String apiKey = "api_key=DUMMY_KEY";
     private String urlArtist = "method=artist.gettopalbums&artist=";
     // Artist & album Url
     // http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=
-    // dc5fa846a22b158c42612c953c1e2576&artist=Cher&album=Believe
+    // DUMMY_KEY&artist=Cher&album=Believe
 
     // Artist get albums URL
     // http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=cher&api_key=
-    // dc5fa846a22b158c42612c953c1e2576
+    // DUMMY_KEY
     private FetchArtistsTask fetchArtists;
     private FetchDataTask fetchDataTask;
 
